@@ -1,10 +1,13 @@
 import React from 'react';
 
-const Todo = ({todo}) => {
+export default function Todo  ({todo, toggleTodo}) {
+    function handleTodoClick(){
+        toggleTodo(todo.id)
+    }
     return (
         <div>
         <label>
-        <input type="checkbox" checked={todo.complete}/>
+        <input type="checkbox" checked={todo.complete} onChange={handleTodoClick}/>
         {todo.name}
         </label>
             
@@ -12,4 +15,4 @@ const Todo = ({todo}) => {
     );
 }
 
-export default Todo;
+
