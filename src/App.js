@@ -40,9 +40,17 @@ console.log(todos)
     const newTodos =todos.filter(todo => !todo.complete)
     setTodos(newTodos)
   }
-
+    let date = new Date();
+    let day = date.getDate();
+    let month = date.getMonth();
+    let year = date.getFullYear();
   return (
-    <div>
+    <div className= "container">
+    <div className= "header">  
+    <h1>Today</h1>
+    <h3>{day + ' / ' + month + ' / ' + year}</h3>
+    </div>
+  
       <TodoList todos={todos} toggleTodo={toggleTodo}/>
       <input ref={toDoNameRef} type="text" />
       <button onClick={handleAddTodo}>Add Todo</button>
