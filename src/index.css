@@ -1,40 +1,63 @@
 body{
-    background-color: beige;
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Roboto', sans-serif;
 }
 .container{
-background-color: plum;
+    margin: auto;
+    height: 600px;
+    width: 600px;
+background-color: goldenrod;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
-margin: 60px;
-padding: 100px;
-width:300px;
-height:500px;
 border-radius: 15px;
+
 }
 .header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0px;
+    margin: 0px 0px;
     width: 100%;
-    border: 2px solid white;
-  
+    width: auto;
+    height: 200px;
+    padding: 20px;
+    background-image:url(https://i.pinimg.com/564x/d3/e0/29/d3e029ba726510578f4d8b9742f049bf.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
+
 .todo{
     display: flex;
-    background-color: azure;
+    background-color: white;
     padding: 20px;
     margin: 1px;
     border: 1px solid black;
     border-radius: 15px;
-    font-size: 25px;
+    font-size: 24px;
+    width: 500px;
+    height: 90px;
+}
+
+.btn{
+    width: 150px;
+    margin: 15px;
+}
+ 
+.container-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
- 
+
+.form-check-input{
+    margin: 15px;
+}
